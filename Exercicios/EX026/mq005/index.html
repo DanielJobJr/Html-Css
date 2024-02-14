@@ -10,8 +10,9 @@
 <body>
     <header>
         <h1>My Site</h1>
-        <menu>
-           <ul>
+        <span id="burguer"   class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="mn">
+            <ul>
             <li><a href="#">Opcao 1</a></li>
             <li><a href="#">Opcao 2</a></li>
             <li><a href="#">Opcao 3</a></li>
@@ -29,5 +30,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quaerat natus quibusdam, itaque doloribus quam dolore, alias voluptates fuga veritatis ea corporis expedita nesciunt! Voluptatem sapiente eius nostrum doloremque aut.</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if(mn.style.display == 'block'){
+                mn.style.display = 'none'
+            } else{
+                mn.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
